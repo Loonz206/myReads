@@ -1,4 +1,5 @@
 {
+  "homepage": "https://loonz206.github.io/myReads",
   "dependencies": {
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
@@ -7,12 +8,14 @@
     "sort-by": "^1.2.0"
   },
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "react-scripts": "0.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && gh-pages -d build"
   }
 }
