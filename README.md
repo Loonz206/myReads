@@ -11,9 +11,6 @@ To get started developing right away:
 * install all project dependencies with `npm install`
 * start the development server with `npm start`
 
-To view the project visit:
-[MyReads](https://loonz206.github.io/myReads/)
-
 ## What You're Getting
 ```bash
 ├── CONTRIBUTING.md
