@@ -1,5 +1,5 @@
 {
-  "homepage": "https://loonz206.github.io/myReads/",
+  "homepage": "https://loonz206.github.io/myReads",
   "dependencies": {
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
@@ -26,7 +26,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "pretty": "prettier --ignore-path .gitignore \"**/*.+(js|json|md)\"",
     "format": "npm run pretty -- --write"
   }
