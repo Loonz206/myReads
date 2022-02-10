@@ -8,14 +8,26 @@
     "sort-by": "^1.2.0"
   },
   "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.28.0",
     "gh-pages": "^1.1.0",
+    "prettier": "^2.5.1",
     "react-scripts": "0.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
+    "lint": "eslint --ignore-path .gitignore --ext .js --ext .jsx .",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build",
+    "pretty": "prettier --ignore-path .gitignore \"**/*.+(js|json|md)\"",
+    "format": "npm run pretty -- --write"
   }
 }
